@@ -1,0 +1,49 @@
+\documentclass[letter,12pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         resume.tex
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Nov 19, 2021
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Luis Ontaneda Mijares} % Name Here
+
+\def\LinkedIn{www.linkedin.com/in/luisontaneda/}
+\def\github{luisontaneda} % github username
+\def\gitlab{luisontaneda}
+\def\phone{+447440694761}
+\def\city{London}
+\def\email{luis.ont.mij@gmail.com}
+
+
+\begin{document}
+\import{sections/}{_header}
+\import{sections/}{objective}
+
+\section{Skills}
+\import{sections/}{skills}
+
+\section{Technical Experience}
+\import{sections/}{experience}
+
+\section{Education}
+\import{sections/}{education}
+
+% make a newpage wherever it is a clean break
+% \newpage
+
+\section{Projects}
+\import{sections/}{activities}
+
+
+\end{document}
